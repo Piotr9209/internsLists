@@ -1,0 +1,8 @@
+@import "./sass/reset";
+body {
+    background: url("../public/assets/logo.svg") 2.6rem 2.6rem no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

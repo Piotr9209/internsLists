@@ -1,0 +1,129 @@
+@import "../../sass/typography";
+@import "../../sass/variables";
+
+//TODO: change internshipStart and internshipEnd to ok with Figma project.
+.edit {
+    background-color: #f7f7f7;
+    font-family: $roboto-font;
+    font-style: normal;
+    padding: 2rem;
+    color: $neutral-black-color;
+    .edit__container__NavLink {
+        position: relative;
+        top: -7rem;
+        left: -3rem;
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: $roboto-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            &::before {
+                content: "";
+                background-image: url("../../../public/assets/icon/arrow-left.svg");
+                background-repeat: no-repeat;
+                background-position: center 0;
+                padding-left: 2rem;
+                padding-top: 0;
+            }
+        }
+    }
+    h1 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        padding-left: 0.5rem;
+    }
+    .form__container {
+        padding-top: 2rem;
+        font-family: $roboto-font;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        div {
+            padding: 0.5rem;
+        }
+        .form__container--fullName {
+            padding-bottom: 2rem;
+            label {
+                display: block;
+                padding-bottom: 0.5rem;
+            }
+            input {
+                display: block;
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                font-size: 16px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            p {
+                font-family: $roboto-font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $red-error-color;
+            }
+        }
+        .form__container--email {
+            label {
+                display: block;
+                padding-bottom: 0.5rem;
+            }
+            input {
+                display: block;
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                font-size: 16px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            p {
+                font-family: $roboto-font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $red-error-color;
+            }
+        }
+        .form__container--date {
+            padding-top: 2rem;
+            label {
+                margin-right: 5px;
+            }
+            input {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            p {
+                font-family: $roboto-font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $red-error-color;
+                margin-left: 18rem;
+            }
+        }
+        .form__container--button {
+            input {
+                display: block;
+                padding: 0.5rem 5.5rem;
+                background-color: $neutral-black-color;
+                color: #ffffff;
+                border: none;
+                font-family: $roboto-font;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 24px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
